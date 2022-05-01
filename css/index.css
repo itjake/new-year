@@ -11,6 +11,7 @@ h1,
 h2,
 p {
   margin: 0;
+  background-color: #1a5b35;
 }
 
 .container {
@@ -20,13 +21,10 @@ p {
 
 .winter__content {
   padding: 20px;
-  background-color: #1a5b35;
-  height: 625px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .winter__title {
@@ -36,6 +34,9 @@ p {
   font-size: 22px;
   line-height: 115px;
   color: #d6bd84;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .winter__info {
@@ -47,6 +48,9 @@ p {
   text-align: center;
   color: #ffffff;
   width: 662px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .winter__subinfo {
@@ -57,6 +61,20 @@ p {
   font-size: 18px;
   line-height: 22px;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img__three {
+  position: relative;
+  bottom: -410px;
+  left: 170px;
+}
+.img__four {
+  position: relative;
+  bottom: -425px;
+  left: 0%;
 }
 
 .two {
@@ -65,35 +83,30 @@ p {
 
 .img__one {
   position: absolute;
-  left: 1.03px;
-  top: 32px;
+  left: 0;
+  top: 3%;
 }
 .img__two {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0%;
+  right: 0%;
 }
-.img__three {
-  position: absolute;
-  bottom: 85px;
-  left: 780px;
-}
-.img__four {
-  position: absolute;
-  bottom: 5px;
-  left: 620px;
-}
+
 .img__five {
   position: absolute;
-  left: 0px;
-  bottom: 70px;
+  left: 0%;
+  bottom: 11%;
 }
 .img__six {
   position: absolute;
-  left: 0px;
-  bottom: 0;
+  left: 0%;
+  bottom: 0%;
 }
 
+.wrapper {
+  position: absolute;
+  top: 15%;
+}
 @media print {
   svg {
     display: none;
@@ -119,6 +132,16 @@ p {
   }
   p {
     color: #000;
+  }
+}
+
+@media screen and (min-width: 2559px) {
+  .img__three {
+    bottom: -480px;
+    left: 160px;
+  }
+  .img__four {
+    bottom: -800px;
   }
 }
 
@@ -160,50 +183,66 @@ p {
 }
 
 @media screen and (max-width: 425px) {
-  .img__three{
-    left: 75%;
+  .img__one {
+    top: -5%;
   }
-  .img__four{
-    left: 35%;
+  .img__three {
+    bottom: -47%;
+    left: 38%;
+  }
+  .img__four {
+    left: 0%;
+    bottom: -55%;
   }
 }
 @media screen and (max-width: 375px) {
-  .img__three{
-    left: 73%;
+  .wrapper {
+    left: 7%;
   }
-  .img__four{
-    left: 33%;
+  .img__one {
+    top: -7%;
   }
-  .img__five{
-    left: 83%;
+  .img__three {
+    left: 39%;
+    bottom: -45%;
   }
-  .winter__title{
+  .img__four {
+    left: 2%;
+  }
+  .img__five {
+    left: 81%;
+  }
+  .winter__title {
     margin-top: 40px;
   }
 }
 @media screen and (max-width: 320px) {
-  .img__one{
-    display: none;
+  .wrapper {
+    left: 2%;
   }
-  .img__three{
+  .img__one {
+    top: -19%;
+    /* display: none; */
+  }
+  .img__three {
     left: 73%;
     display: none;
   }
-  .img__four{
-    left: 30%;
+  .img__four {
+    left: 0%;
   }
-  .img__five{
-    top: 2%;
+  .img__five {
+    top: 10%;
     left: 80%;
-    display: none;
+    /* display: none; */
   }
-  .winter__title{
+  .winter__title {
     margin-top: 40px;
   }
-  .winter__info{
+  .winter__info {
     width: 300px;
   }
-  .winter__content{
+  .winter__content {
     height: 865px;
   }
 }
